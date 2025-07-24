@@ -1,0 +1,87 @@
+mport "./nav.css"
+
+
+function App() {
+const NavBar = ()=>{
+  return(
+  <nav className="navbar">
+    <div className="navbar-container">
+      <h1 className="logo">Hotel Timu</h1>
+      <ul className="nav-links">
+        <li> <a href="#home">Home</a> </li>
+        <li> <a href="#about">About</a> </li>
+        <li> <a href="#rooms">Rooms</a> </li> <li> <a href="#contact">Contact</a> </li>
+      </ul>
+
+    </div>
+  </nav>
+  )
+}
+const age = 18
+// if(age >= 18)
+// {
+//   console.log("you are eligible to vote")
+// }
+// }
+// else{
+//   console.log("you are not eligible to vote")
+// }
+if(age > 4)
+{
+  console.log("you are child")
+}
+else if(age >= 18)
+{
+  console.log("you are adult")
+}
+else if(4< age<=18 )
+{
+  console.log("you are a teen")
+}
+
+  return (
+   <>
+  {/* <NavBar /> */}
+
+   
+   </>
+    
+  )
+}
+
+export default App
+
+mport "./nav.css"
+
+function App() {
+  
+  const NavBar =() =>
+  {return(
+    <nav className="navbar">
+      <div className="navbar-container">
+        <h1 className="logo">
+          hotel name
+        </h1>
+        <ul className="nav-link">
+          <li> <a href="#home">home</a> </li>
+           <li> <a href="#home">about</a> </li>
+           <li> <a href="#home">rooms</a> </li>
+           <li> <a href="#home">contacts</a></li>
+          
+
+        </ul>
+
+      </div>
+    </nav>)
+  }
+  
+  return (
+    <>
+   
+    <NavBar />
+
+    </>
+  )
+}
+
+export default App

@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top:0;
+    z-index: 100;
+}
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+.logo{
+    color: black;
+    font-size: 1.8rem;
+    gap: 1.5rem
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+.nav-links a{
+    text-decoration: none;
+    color: black
+}
+
+mport"../nav.css"
+const NavBar = ()=>{
+    return(
+    <nav className="navbar">
+      <div className="navbar-container">
+        <h1 className="logo">
+          hotel name
+        </h1>
+        <ul className="nav-link">
+          <li> <a href="#home">home</a> </li>
+           <li> <a href="#home">about</a> </li>
+           <li> <a href="#home">rooms</a> </li>
+           <li> <a href="#home">contacts</a></li>
+          
+
+        </ul>
+
+      </div>
+    </nav>)
+  
+}
